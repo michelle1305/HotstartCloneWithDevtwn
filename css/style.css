@@ -67,9 +67,17 @@ body {
     text-transform: capitalize;
 }
 
+.tv-nav-list li {
+    opacity: 0.8;
+}
+
 .tv-nav-items {
     margin: 20px auto;
+}
+
+.tv-nav-items:hover {
     cursor: pointer;
+    opacity: 1;
 }
 
 #tv:hover .tv-nav {
@@ -95,9 +103,17 @@ body {
     text-transform: capitalize;
 }
 
+.movie-nav-list li {
+    opacity: 0.8;
+}
+
 .movie-nav-items {
     margin: 20px auto;
+}
+
+.movie-nav-items:hover {
     cursor: pointer;
+    opacity: 1;
 }
 
 #movie:hover .movie-nav {
@@ -123,9 +139,17 @@ body {
     text-transform: capitalize;
 }
 
+.sport-nav-list li {
+    opacity: 0.8;
+}
+
 .sport-nav-items {
     margin: 20px auto;
+}
+
+.sport-nav-items:hover {
     cursor: pointer;
+    opacity: 1;
 }
 
 #sport:hover .sport-nav {
@@ -134,11 +158,6 @@ body {
 
 .nav-items a:hover {
     opacity: 1;
-    @media (hover: hover) {
-        #tv .tv-nav {
-            display: block;
-        }
-    }
 }
 
 .right-container {
