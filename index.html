@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Disney+ Hotstar Clone - Watch TV Shows, Movies, Specials, Live Cricket
+        Disney+ Hotstar Clone - Watch TV Shows, Movies, Specials, Live Cricket
     </title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <script src="js/index.js" async></script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      async
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <img class="brand-logo" src="images/logo.png" alt="logo" />
-      <ul class="nav-links">
-        <li class="nav-items"><a href="#">TV</a></li>
-        <li class="nav-items"><a href="#">Movies</a></li>
-        <li class="nav-items"><a href="#">Sports</a></li>
-        <li class="nav-items"><a href="#">Premium</a></li>
-      </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
+</head>
 
-      <div class="right-container">
-        <input type="text" class="search-box" placeholder="search" /><img src="images/searchpng.png" alt=""><button class="sub-btn">subscribe</button>
-        <a href="#" class="login-link">Login</a>
-      </div>
+<body>
+    <nav class="navbar">
+        <img class="brand-logo" src="images/logo2.svg" alt="logo" />
+        <ul class="nav-links">
+            <!-- TV tab -->
+            <li class="nav-items"><a id="tv" href="#">TV
+              <div class="tv-nav">
+                <ul class="tv-nav-list">
+                  <li class="tv-nav-items">Other Shows</li>
+                  <li class="tv-nav-items">Hotstar Specials</li>
+                  <li class="tv-nav-items">Quix</li>
+                  <li class="tv-nav-items">Star Jalsha</li>
+                  <li class="tv-nav-items">StarPlus</li>
+                  <li class="tv-nav-items">Star Vijay</li>
+                  <li class="tv-nav-items">Star Bharat</li>
+                  <!-- <li class="tv-nav-items">Asianet</li> -->
+                  <li class="tv-nav-items">more...</li>
+                  <!-- <a href="#more-tv">more...</a> -->
+        </ul>
+        </div>
+        </a>
+        </li>
+        <!-- Movies tab  -->
+        <li class="nav-items"><a id="movie" href="#">Movies
+          <div class="movie-nav">
+            <ul class="movie-nav-list">
+              <li class="movie-nav-items">Odia</li>
+              <li class="movie-nav-items">Hindi</li>
+              <li class="movie-nav-items">Bengali</li>
+              <li class="movie-nav-items">Telugu</li>
+              <li class="movie-nav-items">Malayalam</li>
+              <li class="movie-nav-items">Tamil</li>
+              <li class="movie-nav-items">Marathi</li>
+              <li class="movie-nav-items">more...</li>
+            </ul>
+            </div>
+            </a>
+        </li>
+        <!-- sports tab -->
+        <li class="nav-items"><a id="sport" href="#">Sports
+          <div class="sport-nav">
+            <ul class="sport-nav-list">
+              <li class="sport-nav-items">Cricket</li>
+              <li class="sport-nav-items">Tennis</li>
+              <li class="sport-nav-items">football</li>
+              <li class="sport-nav-items">Hockey</li>
+              <li class="sport-nav-items">Khelo India</li>
+              <li class="sport-nav-items">Martial Arts</li>
+              <li class="sport-nav-items">kabaddi</li>
+              <li class="sport-nav-items">more...</li>
+            </ul>
+            </div>
+            </a>
+        </li>
+        <li class="nav-items"><a href="#">Premium</a></li>
+        </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search" /><img src="images/searchpng.png" alt=""><button class="sub-btn">subscribe</button>
+            <a href="#" class="login-link">Login</a>
+        </div>
     </nav>
 
     <div class="carousel-container">
-      <div class="carousel">
-        <!-- <div class="slider">
+        <div class="carousel">
+            <!-- <div class="slider">
           <div class="slide-content">
             <h1 class="movie-title">Loki</h1>
             <p class="movie-des">
@@ -44,608 +90,529 @@
           </div>
           <img src="images/slider1.png" alt="slider1-img" />
         </div> -->
-      </div>
+        </div>
     </div>
     <div class="video-card-container">
-      <!-- video card 1 -->
-      <div class="video-card">
-        <img
-          class="video-card-image"
-          src="images/disney.png"
-          alt="disney image"
-        />
-        <video src="videos/disney.mp4" muted loop class="card-video"></video>
-      </div>
+        <!-- video card 1 -->
+        <div class="video-card">
+            <img class="video-card-image" src="images/disney.png" alt="disney image" />
+            <video src="videos/disney.mp4" muted loop class="card-video"></video>
+        </div>
 
-      <!-- video card 2 -->
-      <div class="video-card">
-        <img
-          class="video-card-image"
-          src="images/pixar.png"
-          alt="disney image"
-        />
-        <video src="videos/pixar.mp4" muted loop class="card-video"></video>
-      </div>
+        <!-- video card 2 -->
+        <div class="video-card">
+            <img class="video-card-image" src="images/pixar.png" alt="disney image" />
+            <video src="videos/pixar.mp4" muted loop class="card-video"></video>
+        </div>
 
-      <!-- video card 3 -->
-      <div class="video-card">
-        <img
-          class="video-card-image"
-          src="images/marvel.png"
-          alt="disney image"
-        />
-        <video src="videos/marvel.mp4" muted loop class="card-video"></video>
-      </div>
+        <!-- video card 3 -->
+        <div class="video-card">
+            <img class="video-card-image" src="images/marvel.png" alt="disney image" />
+            <video src="videos/marvel.mp4" muted loop class="card-video"></video>
+        </div>
 
-      <!-- video card 4 -->
-      <div class="video-card">
-        <img
-          class="video-card-image"
-          src="images/star-wars.png"
-          alt="disney image"
-        />
-        <video src="videos/star-war.mp4" muted loop class="card-video"></video>
-      </div>
+        <!-- video card 4 -->
+        <div class="video-card">
+            <img class="video-card-image" src="images/star-wars.png" alt="disney image" />
+            <video src="videos/star-war.mp4" muted loop class="card-video"></video>
+        </div>
 
-      <!-- video card 5 -->
-      <div class="video-card">
-        <img
-          class="video-card-image"
-          src="images/geographic.png"
-          alt="disney image"
-        />
-        <video
-          src="videos/geographic.mp4"
-          muted
-          loop
-          class="card-video"
-        ></video>
-      </div>
+        <!-- video card 5 -->
+        <div class="video-card">
+            <img class="video-card-image" src="images/geographic.png" alt="disney image" />
+            <video src="videos/geographic.mp4" muted loop class="card-video"></video>
+        </div>
     </div>
 
     <!-- movies-list 1 -->
     <h1 class="title">Recommended For You</h1>
     <div class="movies-list">
-      <!-- previous button -->
-      <button class="pre-btn" title="btn">
+        <!-- previous button -->
+        <button class="pre-btn" title="btn">
         <img src="images/pre.png" alt="previous button" />
       </button>
 
-      <!-- next button -->
-      <button class="nxt-btn" title="btn">
+        <!-- next button -->
+        <button class="nxt-btn" title="btn">
         <img src="images/nxt.png" alt="next button" />
       </button>
 
-      <!-- cards -->
+        <!-- cards -->
 
-      <div class="card-container">
-        <!-- card 1 -->
-        <div class="card">
-          <img src="images/poster 1.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Loki</h2>
-            <h6 class="des">
-              Marvel Studio's LOKI Streaming exclusively on Disney+ in June 9,
-              2021
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+        <div class="card-container">
+            <!-- card 1 -->
+            <div class="card">
+                <img src="images/poster 1.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Loki</h2>
+                    <h6 class="des">
+                        Marvel Studio's LOKI Streaming exclusively on Disney+ in June 9, 2021
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 2 -->
-        <div class="card">
-          <img src="images/poster 2.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Mulan</h2>
-            <h6 class="des">
-              Mulan, Masquerading as a male soldier to protect her father Mulan,
-              Masquerading as a male Mulan, Masquerading as a male soldier to
-              protect her father Mulan, Masquerading as
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 2 -->
+            <div class="card">
+                <img src="images/poster 2.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Mulan</h2>
+                    <h6 class="des">
+                        Mulan, Masquerading as a male soldier to protect her father Mulan, Masquerading as a male Mulan, Masquerading as a male soldier to protect her father Mulan, Masquerading as
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 3 -->
-        <div class="card">
-          <img src="images/poster 3.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">The Falcon and the Winter Soldier</h2>
-            <h6 class="des">
-              2021 ‧ Superhero ‧ 1 season Streaming exclusively on Disney+
-              Hotstar.
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 3 -->
+            <div class="card">
+                <img src="images/poster 3.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">The Falcon and the Winter Soldier</h2>
+                    <h6 class="des">
+                        2021 ‧ Superhero ‧ 1 season Streaming exclusively on Disney+ Hotstar.
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 4 -->
-        <div class="card">
-          <img src="images/poster 4.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Avengers: Endgame</h2>
-            <h6 class="des">
-              Avengers: Endgame is a 2019 American superhero film based on the
-              Marvel Comics superhero team the Avengers
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 4 -->
+            <div class="card">
+                <img src="images/poster 4.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Avengers: Endgame</h2>
+                    <h6 class="des">
+                        Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 5 -->
-        <div class="card">
-          <img src="images/poster 5.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Thor: Ragnarok</h2>
-            <h6 class="des">
-              2017 ‧ Action/Sci-fi ‧ 2h 10m <br />
-              Thor: Ragnarok is a 2017 American superhero film based on the
-              Marvel Comics character Thor
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 5 -->
+            <div class="card">
+                <img src="images/poster 5.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Thor: Ragnarok</h2>
+                    <h6 class="des">
+                        2017 ‧ Action/Sci-fi ‧ 2h 10m <br /> Thor: Ragnarok is a 2017 American superhero film based on the Marvel Comics character Thor
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 6 -->
-        <div class="card">
-          <img src="images/poster 6.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">The Avengers</h2>
-            <h6 class="des">
-              2012 ‧ Adventure/Action ‧ 2h 23m <br />
-              The Avengers, is a 2012 American superhero film based on the
-              Marvel Comics superhero team of the same name
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 6 -->
+            <div class="card">
+                <img src="images/poster 6.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">The Avengers</h2>
+                    <h6 class="des">
+                        2012 ‧ Adventure/Action ‧ 2h 23m <br /> The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 7 -->
-        <div class="card">
-          <img src="images/poster 7.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Pirates of the Caribbean: Salazar's Revenge</h2>
-            <h6 class="des">
-              2017 ‧ Adventure/Action ‧ 2h 9m <br />
-              Streaming exclusively on Disney+ Hotstar.
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 7 -->
+            <div class="card">
+                <img src="images/poster 7.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Pirates of the Caribbean: Salazar's Revenge</h2>
+                    <h6 class="des">
+                        2017 ‧ Adventure/Action ‧ 2h 9m <br /> Streaming exclusively on Disney+ Hotstar.
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 8 -->
-        <div class="card">
-          <img src="images/poster 8.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Soul</h2>
-            <h6 class="des">
-              2020 ‧ Family/Comedy ‧ 1h 40m <br />
-              Soul is a 2020 American computer-animated comedy-drama film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 8 -->
+            <div class="card">
+                <img src="images/poster 8.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Soul</h2>
+                    <h6 class="des">
+                        2020 ‧ Family/Comedy ‧ 1h 40m <br /> Soul is a 2020 American computer-animated comedy-drama film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 9 -->
-        <div class="card">
-          <img src="images/poster 9.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Raya and the Last Dragon</h2>
-            <h6 class="des">
-              2021 ‧ Family/Adventure ‧ 1h 47m <br />
-              Raya and the Last Dragon is a 2021 American computer-animated
-              fantasy adventure film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        <!-- card 10 -->
-        <div class="card">
-          <img src="images/poster 10.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Luca</h2>
-            <h6 class="des">
-              2021 ‧ Fantasy/Comedy ‧ 1h 35m <br />
-              Luca is a 2021 American computer-animated coming-of-age fantasy
-              film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 9 -->
+            <div class="card">
+                <img src="images/poster 9.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Raya and the Last Dragon</h2>
+                    <h6 class="des">
+                        2021 ‧ Family/Adventure ‧ 1h 47m <br /> Raya and the Last Dragon is a 2021 American computer-animated fantasy adventure film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+            <!-- card 10 -->
+            <div class="card">
+                <img src="images/poster 10.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Luca</h2>
+                    <h6 class="des">
+                        2021 ‧ Fantasy/Comedy ‧ 1h 35m <br /> Luca is a 2021 American computer-animated coming-of-age fantasy film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 11 -->
-        <div class="card">
-          <img src="images/poster 11.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Ford vs Ferrari</h2>
-            <h6 class="des">
-              2019 ‧ Drama/Sport ‧ 2h 32m <br />
-              Ford v Ferrari is a 2019 American sports drama film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+            <!-- card 11 -->
+            <div class="card">
+                <img src="images/poster 11.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Ford vs Ferrari</h2>
+                    <h6 class="des">
+                        2019 ‧ Drama/Sport ‧ 2h 32m <br /> Ford v Ferrari is a 2019 American sports drama film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
 
-        <!-- card 12 -->
-        <div class="card">
-          <img src="images/poster 12.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">X-Men: Dark Phoenix</h2>
-            <h6 class="des">
-              2019 ‧ Action/Adventure ‧ 1h 54m <br />
-              Dark Phoenix is a 2019 American superhero film based on the Marvel
-              Comics X-Men characters
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
+            <!-- card 12 -->
+            <div class="card">
+                <img src="images/poster 12.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">X-Men: Dark Phoenix</h2>
+                    <h6 class="des">
+                        2019 ‧ Action/Adventure ‧ 1h 54m <br /> Dark Phoenix is a 2019 American superhero film based on the Marvel Comics X-Men characters
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- movies-list 2 -->
     <h1 class="title">Popular Shows</h1>
     <div class="movies-list">
-      <!-- previous button -->
-      <button class="pre-btn" title="btn">
+        <!-- previous button -->
+        <button class="pre-btn" title="btn">
         <img src="images/pre.png" alt="previous button" />
       </button>
 
-      <!-- next button -->
-      <button class="nxt-btn" title="btn">
+        <!-- next button -->
+        <button class="nxt-btn" title="btn">
         <img src="images/nxt.png" alt="next button" />
       </button>
-      
-      <!-- cards -->
-      
-      <div class="card-container">
-        
-        <!-- card 1 -->
-        <div class="card">
-          <img src="images/poster 7.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Pirates of the Caribbean: Salazar's Revenge</h2>
-            <h6 class="des">
-              2017 ‧ Adventure/Action ‧ 2h 9m <br />
-              Streaming exclusively on Disney+ Hotstar.
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        
-        <!-- card 2 -->
-        <div class="card">
-          <img src="images/poster 8.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Soul</h2>
-            <h6 class="des">
-              2020 ‧ Family/Comedy ‧ 1h 40m <br />
-              Soul is a 2020 American computer-animated comedy-drama film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        <!-- card 3 -->
-        <div class="card">
-            <img src="images/poster 9.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">Raya and the Last Dragon</h2>
-              <h6 class="des">
-                2021 ‧ Family/Adventure ‧ 1h 47m <br />
-                Raya and the Last Dragon is a 2021 American computer-animated
-                fantasy adventure film
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
-            </div>
-          </div>
-          <!-- card 4 -->
-          <div class="card">
-            <img src="images/poster 10.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">Luca</h2>
-              <h6 class="des">
-                2021 ‧ Fantasy/Comedy ‧ 1h 35m <br />
-                Luca is a 2021 American computer-animated coming-of-age fantasy
-                film
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
-            </div>
-          </div>
-  
-          <!-- card 5 -->
-          <div class="card">
-            <img src="images/poster 11.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">Ford vs Ferrari</h2>
-              <h6 class="des">
-                2019 ‧ Drama/Sport ‧ 2h 32m <br />
-                Ford v Ferrari is a 2019 American sports drama film
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
-            </div>
-          </div>
-  
-          <!-- card 6 -->
-          <div class="card">
-            <img src="images/poster 12.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">X-Men: Dark Phoenix</h2>
-              <h6 class="des">
-                2019 ‧ Action/Adventure ‧ 1h 54m <br />
-                Dark Phoenix is a 2019 American superhero film based on the Marvel
-                Comics X-Men characters
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
-            </div>
-          </div>
 
-        <!-- card 7 -->
-        <div class="card">
-          <img src="images/poster 3.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">The Falcon and the Winter Soldier</h2>
-            <h6 class="des">
-              2021 ‧ Superhero ‧ 1 season Streaming exclusively on Disney+
-              Hotstar.
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        
-        <!-- card 8 -->
-        <div class="card">
-          <img src="images/poster 4.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Avengers: Endgame</h2>
-            <h6 class="des">
-              Avengers: Endgame is a 2019 American superhero film based on the
-              Marvel Comics superhero team the Avengers
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        
-        <!-- card 9 -->
-        <div class="card">
-          <img src="images/poster 1.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Loki</h2>
-            <h6 class="des">
-              Marvel Studio's LOKI Streaming exclusively on Disney+ in June 9,
-              2021
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div> 
-        
-        <!-- card 10 -->
-        <div class="card">
-          <img src="images/poster 5.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Thor: Ragnarok</h2>
-            <h6 class="des">
-              2017 ‧ Action/Sci-fi ‧ 2h 10m <br />
-              Thor: Ragnarok is a 2017 American superhero film based on the
-              Marvel Comics character Thor
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        
-        <!-- card 11 -->
-        <div class="card">
-          <img src="images/poster 6.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">The Avengers</h2>
-            <h6 class="des">
-              2012 ‧ Adventure/Action ‧ 2h 23m <br />
-              The Avengers, is a 2012 American superhero film based on the
-              Marvel Comics superhero team of the same name
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        
-        
-        <!-- card 12 -->
-        <div class="card">
-          <img src="images/poster 2.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Mulan</h2>
-            <h6 class="des">
-              Mulan, Masquerading as a male soldier to protect her father Mulan,
-              Masquerading as a male Mulan, Masquerading as a male soldier to
-              protect her father Mulan, Masquerading as
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
+        <!-- cards -->
 
-        
-      </div>
+        <div class="card-container">
+
+            <!-- card 1 -->
+            <div class="card">
+                <img src="images/poster 7.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Pirates of the Caribbean: Salazar's Revenge</h2>
+                    <h6 class="des">
+                        2017 ‧ Adventure/Action ‧ 2h 9m <br /> Streaming exclusively on Disney+ Hotstar.
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card">
+                <img src="images/poster 8.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Soul</h2>
+                    <h6 class="des">
+                        2020 ‧ Family/Comedy ‧ 1h 40m <br /> Soul is a 2020 American computer-animated comedy-drama film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                <img src="images/poster 9.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Raya and the Last Dragon</h2>
+                    <h6 class="des">
+                        2021 ‧ Family/Adventure ‧ 1h 47m <br /> Raya and the Last Dragon is a 2021 American computer-animated fantasy adventure film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card">
+                <img src="images/poster 10.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Luca</h2>
+                    <h6 class="des">
+                        2021 ‧ Fantasy/Comedy ‧ 1h 35m <br /> Luca is a 2021 American computer-animated coming-of-age fantasy film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="card">
+                <img src="images/poster 11.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Ford vs Ferrari</h2>
+                    <h6 class="des">
+                        2019 ‧ Drama/Sport ‧ 2h 32m <br /> Ford v Ferrari is a 2019 American sports drama film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="card">
+                <img src="images/poster 12.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">X-Men: Dark Phoenix</h2>
+                    <h6 class="des">
+                        2019 ‧ Action/Adventure ‧ 1h 54m <br /> Dark Phoenix is a 2019 American superhero film based on the Marvel Comics X-Men characters
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="card">
+                <img src="images/poster 3.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">The Falcon and the Winter Soldier</h2>
+                    <h6 class="des">
+                        2021 ‧ Superhero ‧ 1 season Streaming exclusively on Disney+ Hotstar.
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="card">
+                <img src="images/poster 4.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Avengers: Endgame</h2>
+                    <h6 class="des">
+                        Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="card">
+                <img src="images/poster 1.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Loki</h2>
+                    <h6 class="des">
+                        Marvel Studio's LOKI Streaming exclusively on Disney+ in June 9, 2021
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 10 -->
+            <div class="card">
+                <img src="images/poster 5.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Thor: Ragnarok</h2>
+                    <h6 class="des">
+                        2017 ‧ Action/Sci-fi ‧ 2h 10m <br /> Thor: Ragnarok is a 2017 American superhero film based on the Marvel Comics character Thor
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 11 -->
+            <div class="card">
+                <img src="images/poster 6.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">The Avengers</h2>
+                    <h6 class="des">
+                        2012 ‧ Adventure/Action ‧ 2h 23m <br /> The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+
+            <!-- card 12 -->
+            <div class="card">
+                <img src="images/poster 2.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Mulan</h2>
+                    <h6 class="des">
+                        Mulan, Masquerading as a male soldier to protect her father Mulan, Masquerading as a male Mulan, Masquerading as a male soldier to protect her father Mulan, Masquerading as
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
     <!-- movies-list 3 -->
     <h1 class="title">New Releases</h1>
     <div class="movies-list">
-      <!-- previous button -->
-      <button class="pre-btn" title="btn">
+        <!-- previous button -->
+        <button class="pre-btn" title="btn">
         <img src="images/pre.png" alt="previous button" />
       </button>
 
-      <!-- next button -->
-      <button class="nxt-btn" title="btn">
+        <!-- next button -->
+        <button class="nxt-btn" title="btn">
         <img src="images/nxt.png" alt="next button" />
       </button>
 
-      <!-- cards -->
+        <!-- cards -->
 
-      <div class="card-container">
-        <!-- card 1 -->
-        <div class="card">
-          <img src="images/poster 10.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Luca</h2>
-            <h6 class="des">
-              2021 ‧ Fantasy/Comedy ‧ 1h 35m <br />
-              Luca is a 2021 American computer-animated coming-of-age fantasy
-              film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-
-        <!-- card 2 -->
-        <div class="card">
-          <img src="images/poster 1.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Loki</h2>
-            <h6 class="des">
-              Marvel Studio's LOKI Streaming exclusively on Disney+ in June 9,
-              2021
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-
-        <!-- card 3 -->
-        <div class="card">
-          <img src="images/poster 2.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Mulan</h2>
-            <h6 class="des">
-              Mulan, Masquerading as a male soldier to protect her father Mulan,
-              Masquerading as a male Mulan, Masquerading as a male soldier to
-              protect her father Mulan, Masquerading as
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-
-        <!-- card 4 -->
-        <div class="card">
-            <img src="images/poster 12.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">X-Men: Dark Phoenix</h2>
-              <h6 class="des">
-                2019 ‧ Action/Adventure ‧ 1h 54m <br />
-                Dark Phoenix is a 2019 American superhero film based on the Marvel
-                Comics X-Men characters
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
+        <div class="card-container">
+            <!-- card 1 -->
+            <div class="card">
+                <img src="images/poster 10.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Luca</h2>
+                    <h6 class="des">
+                        2021 ‧ Fantasy/Comedy ‧ 1h 35m <br /> Luca is a 2021 American computer-animated coming-of-age fantasy film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
             </div>
-          </div>
-        
-        
-        
-        <!-- card 5 -->
-        <div class="card">
-          <img src="images/poster 8.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Soul</h2>
-            <h6 class="des">
-              2020 ‧ Family/Comedy ‧ 1h 40m <br />
-              Soul is a 2020 American computer-animated comedy-drama film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-        <!-- card 6 -->
-        <div class="card">
-          <img src="images/poster 4.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Avengers: Endgame</h2>
-            <h6 class="des">
-              Avengers: Endgame is a 2019 American superhero film based on the
-              Marvel Comics superhero team the Avengers
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
 
-        <!-- card 7 -->
-        <div class="card">
-            <img src="images/poster 9.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">Raya and the Last Dragon</h2>
-              <h6 class="des">
-                2021 ‧ Family/Adventure ‧ 1h 47m <br />
-                Raya and the Last Dragon is a 2021 American computer-animated
-                fantasy adventure film
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
+            <!-- card 2 -->
+            <div class="card">
+                <img src="images/poster 1.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Loki</h2>
+                    <h6 class="des">
+                        Marvel Studio's LOKI Streaming exclusively on Disney+ in June 9, 2021
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
             </div>
-          </div>
 
-          <!-- card 8 -->
-        <div class="card">
-            <img src="images/poster 3.png" alt="poster 1" class="card-img" />
-            <div class="card-body">
-              <h2 class="name">The Falcon and the Winter Soldier</h2>
-              <h6 class="des">
-                2021 ‧ Superhero ‧ 1 season Streaming exclusively on Disney+
-                Hotstar.
-              </h6>
-              <button class="watchlist-btn">add to watchlist</button>
+            <!-- card 3 -->
+            <div class="card">
+                <img src="images/poster 2.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Mulan</h2>
+                    <h6 class="des">
+                        Mulan, Masquerading as a male soldier to protect her father Mulan, Masquerading as a male Mulan, Masquerading as a male soldier to protect her father Mulan, Masquerading as
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
             </div>
-          </div>
 
-        <!-- card 9 -->
-        <div class="card">
-          <img src="images/poster 5.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Thor: Ragnarok</h2>
-            <h6 class="des">
-              2017 ‧ Action/Sci-fi ‧ 2h 10m <br />
-              Thor: Ragnarok is a 2017 American superhero film based on the
-              Marvel Comics character Thor
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
+            <!-- card 4 -->
+            <div class="card">
+                <img src="images/poster 12.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">X-Men: Dark Phoenix</h2>
+                    <h6 class="des">
+                        2019 ‧ Action/Adventure ‧ 1h 54m <br /> Dark Phoenix is a 2019 American superhero film based on the Marvel Comics X-Men characters
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+
+
+            <!-- card 5 -->
+            <div class="card">
+                <img src="images/poster 8.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Soul</h2>
+                    <h6 class="des">
+                        2020 ‧ Family/Comedy ‧ 1h 40m <br /> Soul is a 2020 American computer-animated comedy-drama film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="card">
+                <img src="images/poster 4.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Avengers: Endgame</h2>
+                    <h6 class="des">
+                        Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="card">
+                <img src="images/poster 9.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Raya and the Last Dragon</h2>
+                    <h6 class="des">
+                        2021 ‧ Family/Adventure ‧ 1h 47m <br /> Raya and the Last Dragon is a 2021 American computer-animated fantasy adventure film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="card">
+                <img src="images/poster 3.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">The Falcon and the Winter Soldier</h2>
+                    <h6 class="des">
+                        2021 ‧ Superhero ‧ 1 season Streaming exclusively on Disney+ Hotstar.
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="card">
+                <img src="images/poster 5.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Thor: Ragnarok</h2>
+                    <h6 class="des">
+                        2017 ‧ Action/Sci-fi ‧ 2h 10m <br /> Thor: Ragnarok is a 2017 American superhero film based on the Marvel Comics character Thor
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 10 -->
+            <div class="card">
+                <img src="images/poster 6.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">The Avengers</h2>
+                    <h6 class="des">
+                        2012 ‧ Adventure/Action ‧ 2h 23m <br /> The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+            <!-- card 11 -->
+            <div class="card">
+                <img src="images/poster 7.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Pirates of the Caribbean: Salazar's Revenge</h2>
+                    <h6 class="des">
+                        2017 ‧ Adventure/Action ‧ 2h 9m <br /> Streaming exclusively on Disney+ Hotstar.
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+
+            <!-- card 12 -->
+            <div class="card">
+                <img src="images/poster 11.png" alt="poster 1" class="card-img" />
+                <div class="card-body">
+                    <h2 class="name">Ford vs Ferrari</h2>
+                    <h6 class="des">
+                        2019 ‧ Drama/Sport ‧ 2h 32m <br /> Ford v Ferrari is a 2019 American sports drama film
+                    </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div>
+
+
         </div>
-
-        <!-- card 10 -->
-        <div class="card">
-          <img src="images/poster 6.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">The Avengers</h2>
-            <h6 class="des">
-              2012 ‧ Adventure/Action ‧ 2h 23m <br />
-              The Avengers, is a 2012 American superhero film based on the
-              Marvel Comics superhero team of the same name
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-
-        <!-- card 11 -->
-        <div class="card">
-          <img src="images/poster 7.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Pirates of the Caribbean: Salazar's Revenge</h2>
-            <h6 class="des">
-              2017 ‧ Adventure/Action ‧ 2h 9m <br />
-              Streaming exclusively on Disney+ Hotstar.
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-
-
-        <!-- card 12 -->
-        <div class="card">
-          <img src="images/poster 11.png" alt="poster 1" class="card-img" />
-          <div class="card-body">
-            <h2 class="name">Ford vs Ferrari</h2>
-            <h6 class="des">
-              2019 ‧ Drama/Sport ‧ 2h 32m <br />
-              Ford v Ferrari is a 2019 American sports drama film
-            </h6>
-            <button class="watchlist-btn">add to watchlist</button>
-          </div>
-        </div>
-
-        
-      </div>
     </div>
 
 
@@ -653,5 +620,6 @@
 
 
     <script src="js/index.js" async></script>
-  </body>
+</body>
+
 </html>
