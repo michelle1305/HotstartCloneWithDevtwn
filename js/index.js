@@ -1,6 +1,3 @@
-//there is a problem with the editor , it rearrages the code after saving so the marginLeft formula comes in three lines which makes it wrong
-// i asked to other student whether it happended they said it worked on their side , plz check that if it works on oyur side too , plz don't judge by that 2-3 lines of code
-// also if i ran it manually using console , this lines works !!
 var movies = [
   {
     name: 'loki',
@@ -34,8 +31,10 @@ var movies = [
   }
 ];
 
+// carousel element
+
 const carousel = document.querySelector('.carousel');
-var sliders = [];
+let sliders = [];
 var slideIndex = 0; // to track the current slide
 
 const createSlide = () => {
@@ -44,10 +43,10 @@ const createSlide = () => {
   }
 
   // create our DOM elements
-  var slide = document.createElement('div');
-  var content = document.createElement('div');
-  var h1 = document.createElement('h1');
-  var p = document.createElement('p');
+  let slide = document.createElement('div');
+  let content = document.createElement('div');
+  let h1 = document.createElement('h1');
+  let p = document.createElement('p');
   var imgElement = document.createElement('img');
 
   // attaching all the elements
@@ -73,20 +72,22 @@ const createSlide = () => {
   sliders.push(slide);
 
   // slide effect
-  if (slide.length) {
-    sliders[0].style.marginLeft = `calc(-${100* (sliders.length - 2)}% - ${ 30* (sliders.length - 2) }px )`;
+  if (sliders.length) {
+    sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${
+      30 * (sliders.length - 2)
+    }px )`;
   }
 };
-
-// to keep it sliding we want to call this function many times so we create a loop
-for (var i = 0; i < 3; i++) {
-  createSlide();
-}
 
 // to set up the sliding interval we use setInterval() function
 setInterval(() => {
   createSlide();
 }, 3000);
+
+// to keep it sliding we want to call this function many times so we create a loop
+for (var i = 0; i < 3; i++) {
+  createSlide();
+}
 
 // video cards
 
@@ -104,3 +105,18 @@ videoCards.forEach((item) => {
 });
 
 // card sliders
+
+let cardContainers = [...document.querySelectorAll('.card-container')];
+let preBtns = [...document.querySelectorAll('.pre-btn')];
+let nxtBtns = [...document.querySelectorAll('.nxt-btn')];
+cardContainers.forEach((item, i) => {
+  let containerDimensions = item.getBoundingClientRect();
+  let containerWidth = containerDimensions.width;
+
+  nxtBtns[i].addEventListener('click', () => {
+    item.scrollLeft += containerWidth - 200;
+  });
+  preBtns[i].addEventListener('click', () => {
+    item.scrollLeft -= containerWidth + 200;
+  });
+});

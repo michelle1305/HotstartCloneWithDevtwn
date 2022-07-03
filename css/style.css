@@ -47,8 +47,9 @@ body {
   opacity: 1;
 }
 .right-container {
-  display: block;
+  display: flex;
   margin-left: auto;
+  justify-content: space-around;
 }
 
 .search-box {
@@ -63,6 +64,14 @@ body {
   font-size: 16px;
   font-weight: 500;
   transition: 0.5s;
+}
+.right-container img {
+  border: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+  width: 20px;
+  height: 30px;
+  opacity: 0.8;
 }
 
 .search-box:focus {
@@ -152,7 +161,7 @@ login-link:hover {
 .movie-des {
   width: 80%;
   line-height: 30px;
-  padding-left: 30px;
+  padding-left: 50px;
   margin-top: 30px;
   opacity: 0.8;
 }
@@ -351,5 +360,5 @@ login-link:hover {
 
 .pre-btn:hover img,
 .nxt-btn:hover img {
-  opacity: 11;
+  opacity: 1;
 }
