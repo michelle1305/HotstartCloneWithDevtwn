@@ -74,9 +74,7 @@ const createSlide = () => {
 
   // slide effect
   if (slide.length) {
-    sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${
-      30 * (sliders.length - 2)
-    }px )`;
+    sliders[0].style.marginLeft = `calc(-${100* (sliders.length - 2)}% - ${ 30* (sliders.length - 2) }px )`;
   }
 };
 
